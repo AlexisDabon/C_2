@@ -19,3 +19,13 @@ while (erreur < 3) {
 		printf("erreur %d / 3 \n", erreur);
 	}
 }
+	if (erreur == 3) {
+		printf("accès refusé \n");
+	}
+	else { 
+		printf(" accès autorisé \n");
+	}
+
+return 0;
+
+}
