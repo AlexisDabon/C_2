@@ -11,6 +11,14 @@ int main () {
 while (erreur < 3) {
 	printf("entrez votre code : \n");
 	scanf("%d", &code);
+
+if (code == CODE_CORRECT) {
+	break;
+}
+
+else { 
+	erreur++;
+	printf("erreur : %d / 3 \n", erreur);
 }
 
 }
