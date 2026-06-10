@@ -8,6 +8,9 @@ int main () {
 	int erreur = 0;
 	int montant; 
 
-
+while (erreur < 3) {
+	printf("entrez votre code : \n");
+	scanf("%d", &code);
+}
 
 }
