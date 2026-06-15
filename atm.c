@@ -19,4 +19,10 @@ int code, erreurs = 0;
 	}
 	}
 
+	if (erreurs == 3) {
+		printf("bloqué ! \n");
+		return 0;
+	}
+
+
 		
