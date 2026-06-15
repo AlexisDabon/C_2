@@ -24,7 +24,7 @@ int code, erreurs = 0;
 		return 0;
 	}
 	
-	do { 
+	do {
 		printf("1.solde 2.retrait 3.Dépôt 4.quitter \n choix:");
 		scanf("%d", &choix);
 		
@@ -49,7 +49,7 @@ int code, erreurs = 0;
 				solde += montant;
 				printf("dépôt de : %d . nouveau solde : %d \n", montant, solde);
 				break;
-			case 4 : 
+			case 4 :
 				printf("au revoir \n");
 				break;
 			default : printf("invalide \n");
