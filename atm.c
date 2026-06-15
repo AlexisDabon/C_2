@@ -23,6 +23,10 @@ int code, erreurs = 0;
 		printf("bloqué ! \n");
 		return 0;
 	}
-
+	
+	do { 
+		printf("1.solde 2.retrait 3.Dépôt 4.quitter \n choix:");
+		scanf("%d", &choix);
+	}
 
 		
