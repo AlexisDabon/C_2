@@ -13,3 +13,4 @@
 * **Description:** A cash withdrawal simulation that authenticates the user with a 3-attempt limit, checks the account balance, and processes the withdrawal if funds are sufficient.
 
 ## Exercise 5 : **Atm**
+* **Description:** A complete ATM simulation featuring secure PIN authentication (max 3 attempts) and an interactive menu to check balance, withdraw cash, or deposit funds.
