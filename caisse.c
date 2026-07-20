@@ -6,11 +6,11 @@ void vider_tampon(void) {
 	while ((c = getchar()) != '\n' && c != EOF);
 }
 
-
 int main(void) {
 	
 	float prix;
 	float total = 0;
+	int compteur = 0; 
 
 	do { 
 		printf("Entrez le prix de l'article (0 pour terminer le programme): \n");
@@ -24,9 +24,14 @@ int main(void) {
 		printf("Erreur le prix ne peut pas être négatif \n");
 		} else if (prix > 0) {
 		total += prix;
+		compteur++;
 		}
+
 	} while (prix != EXIT_VALUE);
 	
-	printf("Le prix total est de: %.2f \n", total);
+		printf("\n--- Résumé final ---\n");	
+		printf("Nombre d'articles : %d\n", compteur);
+		printf("Prix total : %.2f €\n", total);
+
 	return 0;
 }
