@@ -1,4 +1,5 @@
 #include <stdio.h> 
+#include <stdbool.h>
 
 void vider_buffer(void) {
 	int c;
@@ -20,4 +21,13 @@ int code_securise(void) {
 		return - 1;
 	}
 }
+
+bool verif_code(int code_saisis, int code_secret) {
+	if (code_saisis == code_secret) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
 	
