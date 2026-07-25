@@ -1,25 +1,23 @@
 #include <stdio.h> 
 
-int main () {
-
-int codes;
-int essaies = 0;
-
-while (1) {
-	printf ("entrez le code : \n");
-	scanf ("%d", &codes);
-
-	if ( codes == 1234 ) {
-		break;
-	}
-	else {
-		printf ("accès refusé \n");
-		essaies++;
-	}
+void vider_buffer(void) {
+	int c;
+	do {
+	c = getchar();
+	} while (c != '\n' && c != EOF);
 }
 
-printf ("Accès accordé ! Erreurs : %d", essaies);
+int code_securise(void) {
+	int code;
+	printf("Tapez le code: \n");
+	
+	int retour = scanf("%d", &code);
+	vider_buffer();
 
-return 0;
-
+	if (retour == 1) {
+		return code;
+	} else { 
+		return - 1;
+	}
 }
+	
