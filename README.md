@@ -1,14 +1,24 @@
-# REFACTORING C2 IN PROGRESS
+# LOGIC SERIES OF C PROGRAMING:
 
-* **C2** is currently undergoing refactoring.
+* These C exercises cover various concepts across different levels of C programming.
+* These mini-programs are iterative and are saved through regular 'git commit' commands.
 
-## PROGRAMS LIST:
+## PROGRAMS BY ORDER
 
-### I: caisse.c
+### I: caisse.c (Cash Register System)
 
-Robust input validation by restricting accepted values to positive floats. It effectively handles non-numeric character types, prevents infinite loops by clearing the stdin buffer after any input error, and maintains an accurate running total of all items.
+A robust checkout simulation that validates item prices by restricting inputs to positive floats. It prevents infinite loop crashes on non-numeric characters by systematically flushing the stdin buffer and maintains an accurate running total alongside the total item count.
 
-### II: atm.c
+### II: atm.c (ATM Simulator)
 
-A compact C-based ATM application featuring PIN authentication with attempt limits and interactive balance management.
-It includes robust buffer handling for input validation and optimized conditional logic for seamless operations.
+A compact banking application featuring secure PIN authentication restricted to 3 attempts. It integrates full balance management—including deposits and withdrawals with sufficient fund verification—and uses strict input buffer clearing to guarantee stable navigation through its interactive menu.
+
+### III: controle.c (Access Control System)
+
+A secure access control system built with modular architecture, separating I/O acquisition from PIN verification. It enforces strict type checks, utilizes stdbool.h for state management, locks out after 3 failed attempts, and handles standard system exit codes (EXIT SUCCESS and EXIT FAILURE).
+
+## KEY CONCEPTS
+
+* caisse.c: Implemented a float validation loop paired with buffer flushing to handle bad inputs and track cumulative totals.
+* atm.c: Used conditional balance arithmetic, attempt counting, and interactive switch-case menus protected against invalid entries.
+* controle.c: Separated logic into dedicated.
