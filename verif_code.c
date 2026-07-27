@@ -2,30 +2,27 @@
 
 int main () {
 
-int code;
-int erreur = 0;
+	int code;
+	int erreur = 0;
 
-while (erreur < 3) {
+	while (erreur < 3) {
 	
-	printf("entrez votre code : \n");
+	printf("Entrez votre code : \n");
 	scanf("%d", &code);
 	
 	if (code == 1234) {
 		break;
-	}
-	
-	else {
+	} else {
 		erreur++;
-		printf("erreur %d / 3 \n", erreur);
+		printf("Erreur %d / 3 \n", erreur);
+		}
 	}
-}
+
 	if (erreur == 3) {
-		printf("accès refusé \n");
-	}
-	else { 
-		printf(" accès autorisé \n");
+		printf("Accès refusé \n");
+	} else { 
+		printf("Accès autorisé \n");
 	}
 
-return 0;
-
+	return 0;
 }
