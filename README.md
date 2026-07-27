@@ -37,5 +37,5 @@ Developed a lightweight authentication module in C that uses an erreur counter i
 
 * retrait.c: Utilized a 'while' loop to limit PIN authentication attempts and integrated an 'if-else' conditional block.
 
-* Applied an attempt counter within a 'while' loop to validate input via 'scanf' against a hardcoded PIN, utilizing a 'break' statement upon successful authentication.
+* verif code.c: Applied an attempt counter within a 'while' loop to validate input via 'scanf' against a hardcoded PIN, utilizing a 'break' statement upon successful authentication.
 
