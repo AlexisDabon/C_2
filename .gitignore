@@ -1,0 +1,11 @@
+# Executables
+01_verif_code
+02_controle
+03_retrait
+04_caisse
+05_atm
+
+# Object and temporary files
+*.o
+*.out
+*.swp
